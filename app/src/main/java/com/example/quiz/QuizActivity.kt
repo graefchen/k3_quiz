@@ -79,7 +79,7 @@ class QuizActivity : ComponentActivity() {
         ),
         Question(
             "Welches Südamerikanische Land hat neben Brasilien und Argentiniern noch die Fußballweltmeisterschaft gewonne",
-            "Urugay",
+            "Uruguay",
             "Peru",
             "Bolivien",
             1
