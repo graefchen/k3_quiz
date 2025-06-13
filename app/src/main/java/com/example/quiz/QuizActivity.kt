@@ -46,16 +46,58 @@ class QuizActivity : ComponentActivity() {
             "Canberra",
             3
         ),
-        Question("Wie viele Hauptstädte hat Südafrika?", "3", "2", "1", 1)
-        // TODO: Finish the needed 8+ more Questions
+        Question("Wie viele Hauptstädte hat Südafrika?", "3", "1", "2", 1),
+        Question("Wann wurde die Bundesrepublik Deutschland gegründet?", "1949", "1849", "1937", 1),
+        Question(
+            "Wer is für die Formel \"a²+b²=c²\" bekannt?",
+            "Pythagoras",
+            "Asklepios",
+            "Herodot",
+            1
+        ),
+        Question("Welches ist die älteste Programmiersprache?", "COBOL", "Fortran", "BASIC", 2),
+        Question(
+            "Welcher dieser Vögel kann NICHT fliegen?",
+            "Kiwi",
+            "Kolibri",
+            "Einlappenkotinga",
+            1
+        ),
+        Question(
+            "Welche Flaggen folgender Länder ist NICHT rechteckig?",
+            "Schweiz",
+            "Nepal",
+            "Mikronesien",
+            2
+        ),
+        Question(
+            "Welches der folgenden Tiere ist kein Säugetier",
+            "Schnabeltier",
+            "Kleiner Abendsegler",
+            "Großer Honiganzeiger",
+            1
+        ),
+        Question(
+            "Welches Südamerikanische Land hat neben Brasilien und Argentiniern noch die Fußballweltmeisterschaft gewonne",
+            "Urugay",
+            "Peru",
+            "Bolivien",
+            1
+        ),
+        Question(
+            "Welche der folgenden Sprachen hat weltweit die meisten Mutterspachler?",
+            "Enliosh",
+            "Spanish",
+            "Hindi",
+            2
+        ),
     )
 
     var gameRound = true
     var currentScore = 0
 
     // rounds ...
-    // TODO: Set it up to 10 later
-    val rounds = 2
+    val rounds = 10
 
     // a normal score that is increased when a question was answered correctly
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -92,7 +134,7 @@ class QuizActivity : ComponentActivity() {
             remember { mutableStateOf(questions.removeAt((0 until questions.size).random())) }
         var answerGiven = remember { mutableIntStateOf(0) }
 
-        var round = remember {mutableIntStateOf(0)}
+        var round = remember { mutableIntStateOf(0) }
 
         var buttonText = remember { mutableStateOf("Next Question") }
         // ref for color of buttons: https://stackoverflow.com/questions/64376333/background-color-on-button-in-jetpack-compose
