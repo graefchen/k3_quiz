@@ -1,6 +1,6 @@
 ## Aufgabe 3 -- Quiz
 
-Projekt Number Drei der Kotlin Reihe für Basissysteme der Informationsverarbeitung II.
+Projekt Nummer Drei der Kotlin Reihe für Basissysteme der Informationsverarbeitung II.
 
 Eine einfache Quizapp.
 
